@@ -104,7 +104,7 @@ No prep work! Focus on your group project from State, that's the best way you ca
 _All Together_:
 
 - Dividing tasks: vertical vs. horizontal
-- Walk through the project starter repository
+- Walk through the [project starter repository](https://github.com/hackyourfuturebelgium/javascript-quiz/)
 
 _In Small Groups_:
 
@@ -112,7 +112,7 @@ _In Small Groups_:
 
 ### Project
 
-> coming soon
+2-week group project: [JavaScript Quiz](https://github.com/hackyourfuturebelgium/javascript-quiz/).
 
 </details>
 <br>
