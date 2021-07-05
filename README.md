@@ -163,3 +163,6 @@ Screen recordings of class. Coaches, when sending your PR's with links please ..
 ### class-13-14
 
 [TOP](#single-page-apps)
+
+- [Week 1](https://vimeo.com/571136678) by Anthony, Joshi and Shao
+-
