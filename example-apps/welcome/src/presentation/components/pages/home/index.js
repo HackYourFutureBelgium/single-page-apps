@@ -1,4 +1,4 @@
-import { beWelcoming } from '../../../business-logic/be-welcoming.js';
+import { beWelcoming } from '../../../../business-logic/be-welcoming.js';
 
 /**
  * The home page.

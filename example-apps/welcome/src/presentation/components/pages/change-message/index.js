@@ -1,5 +1,5 @@
-import { readMessage } from '../../../business-logic/read-message.js';
-import { updateMessage } from '../../../business-logic/update-message.js';
+import { readMessage } from '../../../../business-logic/read-message.js';
+import { updateMessage } from '../../../../business-logic/update-message.js';
 
 /**
  * The home page.

@@ -4,9 +4,9 @@
  * @exports router
  */
 
-import Navigo from '../../../../lib/navigo/index.js';
+import Navigo from '../../../../../lib/navigo/index.js';
 
-import { config } from '../../config.js';
+import { config } from '../config.js';
 
 import { page } from '../components/layout/page.js';
 import { fourOhFour } from '../components/pages/four-oh-four.js';
@@ -21,8 +21,8 @@ const parse = (params = {}) => {
   }
   return Object.fromEntries(
     Object.entries(params)
-      .filter(param => param[1] !== 'undefined')
-      .map(param => [
+      .filter((param) => param[1] !== 'undefined')
+      .map((param) => [
         param[0],
         param[1] !== '' && !Number.isNaN(Number(param[1]))
           ? Number(param[1])
@@ -37,25 +37,27 @@ const parse = (params = {}) => {
   );
 };
 
-const routeHandler = pageBody => ({ params, data }) => {
-  const namedRoutes = routes.filter(route => `name` in route);
-  const cleanData = { ...data };
-  cleanData.id = !data || !('id' in data) ? -1 : data.id;
-  const root = document.getElementById('root');
-  root.innerHTML = '';
-  root.appendChild(page(pageBody(parse(data), parse(params)), namedRoutes));
-};
+const routeHandler =
+  (pageBody) =>
+  ({ params, data }) => {
+    const namedRoutes = routes.filter((route) => `name` in route);
+    const cleanData = { ...data };
+    cleanData.id = !data || !('id' in data) ? -1 : data.id;
+    const root = document.getElementById('root');
+    root.innerHTML = '';
+    root.appendChild(page(pageBody(parse(data), parse(params)), namedRoutes));
+  };
 
 routes
-  .map(route => {
+  .map((route) => {
     route.callback = routeHandler(route.page);
     return route;
   })
-  .forEach(route => router.on(route.path, route.callback));
+  .forEach((route) => router.on(route.path, route.callback));
 
 // 404, the user tried accessing a route that does not exist
 router.notFound(({ url }) => {
-  const namedRoutes = routes.filter(route => `name` in route);
+  const namedRoutes = routes.filter((route) => `name` in route);
   const root = document.getElementById('root');
   root.innerHTML = '';
   root.appendChild(page(fourOhFour(url), namedRoutes));

@@ -1,4 +1,4 @@
-import { beWelcoming } from '../../src/business-logic/be-welcoming.js';
+import { beWelcoming } from '../../business-logic/be-welcoming.js';
 
 import { prettyPrint } from '../views/pretty-print.js';
 

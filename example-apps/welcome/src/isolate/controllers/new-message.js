@@ -1,4 +1,4 @@
-import { updateMessage } from '../../src/business-logic/update-message.js';
+import { updateMessage } from '../../business-logic/update-message.js';
 
 import { info } from '../views/info.js';
 import { warning } from '../views/warning.js';

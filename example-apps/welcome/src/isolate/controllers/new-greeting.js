@@ -1,4 +1,4 @@
-import { updateGreeting } from '../../src/business-logic/update-greeting.js';
+import { updateGreeting } from '../../business-logic/update-greeting.js';
 
 import { info } from '../views/info.js';
 import { warning } from '../views/warning.js';

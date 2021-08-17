@@ -1,5 +1,5 @@
-import { readGreeting } from '../../../business-logic/read-greeting.js';
-import { updateGreeting } from '../../../business-logic/update-greeting.js';
+import { readGreeting } from '../../../../business-logic/read-greeting.js';
+import { updateGreeting } from '../../../../business-logic/update-greeting.js';
 
 /**
  * The home page.
