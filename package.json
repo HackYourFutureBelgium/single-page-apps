@@ -1,0 +1,31 @@
+{
+  "name": "single-page-apps",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackYourFutureBelgium/single-page-apps.git"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --silent ",
+    "document": "node lib/document.js",
+    "format": "prettier --write"
+  },
+  "author": "HackYourFutureBelgium",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HackYourFutureBelgium/single-page-apps/issues"
+  },
+  "homepage": "https://github.com/HackYourFutureBelgium/single-page-apps#readme",
+  "jest": {
+    "verbose": true,
+    "testEnvironment": "jsdom"
+  },
+  "devDependencies": {
+    "dependency-cruiser": "^10.0.6",
+    "graphviz-cli": "^1.0.0",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.2"
+  }
+}

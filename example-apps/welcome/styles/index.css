@@ -1,0 +1,11 @@
+@import url('./navbar.css');
+@import url('./page.css');
+@import url('./footer.css');
+
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
